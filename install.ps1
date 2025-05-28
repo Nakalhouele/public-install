@@ -2,7 +2,9 @@
 $pythonVersion = "3.12.3"
 $pythonInstallerUrl = "https://www.python.org/ftp/python/$pythonVersion/python-$pythonVersion-amd64.exe"
 $pythonInstallPath = "C:\Python$pythonVersion"
-$thonnyInstallerUrl = "https://github.com/thonny/thonny/releases/download/v4.1.7/thonny-4.1.7.exe"
+
+$thonnyVersion = "4.1.7"
+$thonnyInstallerUrl = "https://github.com/thonny/thonny/releases/download/v$thonnyVersion/thonny-$thonnyVersion.exe"
 $thonnyInstallPath = "C:\Thonny"
 
 # Télécharger et installer Python
