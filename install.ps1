@@ -1,14 +1,17 @@
 # Ce script installe une version spécifique de python et de thonny sur une machine windows.
 # Il faut être vigiliant aux interactions avec l'ordinateur car des opérations manuelles pourraient être requises.
 
+# Répertoire d'installation
+$installDirectory = "C:\NSI_25"
+
 # Définir la version de Python et les chemins d'installation
 $pythonVersion = "3.12.3"
 $pythonInstallerUrl = "https://www.python.org/ftp/python/$pythonVersion/python-$pythonVersion-amd64.exe"
-$pythonInstallPath = "C:\Python$pythonVersion"
+$pythonInstallPath = "$installDirectory\Python_$pythonVersion"
 
 $thonnyVersion = "4.1.7"
 $thonnyInstallerUrl = "https://github.com/thonny/thonny/releases/download/v$thonnyVersion/thonny-$thonnyVersion.exe"
-$thonnyInstallPath = "C:\Thonny"
+$thonnyInstallPath = "$installDirectory\Thonny_$thonnyVersion"
 
 # Télécharger et installer Python
 $pythonInstaller = "$env:TEMP\python-installer.exe"
